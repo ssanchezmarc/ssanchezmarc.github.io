@@ -5,7 +5,7 @@
 .page__content {
   margin: 0 auto;
   margin-top: 10vmin;
-  max-width: 39ch;
+  max-width: 45ch;
 
   font-family: 'Montserrat', sans-serif;
 }
@@ -30,14 +30,46 @@
 .link {
   text-decoration:none;
   font-weight: bold;
-  color:rgb(29, 50, 70);
+  color: #f26522;
 }
 
-.link:hover {
-  text-shadow: 0 0 10px #999;
+.splitter {
+  display: inline-block;
+  overflow: hidden;
 }
 
-.x {
-  display: flex;
-  align-items: center;
+.splitter:hover .splitter__first-split, .splitter:focus .splitter__first-split {
+  transform: translate3d(0, -105%, 0);
+}
+.splitter:hover .splitter__second-split, .splitter:focus .splitter__second-split {
+  transform: translate3d(0, 105%, 0);
+}
+
+.splitter__first-split,
+.splitter__second-split {
+  display: inline-block;
+  position: relative;
+  transition: transform .3s;
+}
+
+.splitter__first-split::before,
+.splitter__second-split::before {
+  position: absolute;
+  content:  attr(data-hover);
+}
+
+.splitter__first-split {
+  color: #626262;
+}
+.splitter__first-split::before {
+  top: 105%;
+  color: #f26522;
+}
+
+.splitter__second-split {
+  color: #f26522;
+}
+.splitter__second-split::before {
+  bottom: 105%;
+  color: #626262;
 }
