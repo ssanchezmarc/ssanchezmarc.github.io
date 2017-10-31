@@ -1,6 +1,6 @@
 .page__content {
   margin: 0 auto;
-  margin-top: 10vmin;
+  margin-top: 20vmin;
   max-width: 33ch;
 
   font-family: 'Montserrat', sans-serif;
@@ -11,7 +11,9 @@
 }
 
 .me-photo {
-  height: 150px;
+  height: 175px;
+  -webkit-clip-path: circle(50% at 50% 50%);
+  clip-path: circle(50% at 50% 50%);
 }
 
 .icon {
@@ -21,20 +23,20 @@
 }
 
 .link {
-  text-decoration:none;
   color: #f26522;
+  text-decoration:none;
 }
 
-.social-links {
+.social {
   display: flex;
   flex-direction: column;
 }
 
 .splitter {
-  display: flex;
-  overflow: hidden;
   align-items: center;
+  display: flex;
   margin: 5px 0;
+  overflow: hidden;
 }
 
 .splitter:hover .splitter__first-split, .splitter:focus .splitter__first-split {
@@ -60,6 +62,7 @@
 .splitter__first-split {
   color: #000;
 }
+
 .splitter__first-split::before {
   top: 110%;
   color: #f26522;
@@ -68,6 +71,7 @@
 .splitter__second-split {
   color: #f26522;
 }
+
 .splitter__second-split::before {
   bottom: 110%;
   color: #000;
