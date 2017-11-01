@@ -1,3 +1,8 @@
+:root {
+  --link-primary-color: #f26522;
+  --link-secondary-color: #000;
+}
+
 .page__content {
   margin: 0 auto;
   margin-top: 20vmin;
@@ -23,7 +28,7 @@
 }
 
 .link {
-  color: #f26522;
+  color: var(--link-primary-color);
   text-decoration:none;
 }
 
@@ -60,19 +65,19 @@
 }
 
 .splitter__first-split {
-  color: #000;
+  color: var(--link-secondary-color);
 }
 
 .splitter__first-split::before {
   top: 110%;
-  color: #f26522;
+  color: var(--link-primary-color);
 }
 
 .splitter__second-split {
-  color: #f26522;
+  color: var(--link-primary-color);
 }
 
 .splitter__second-split::before {
   bottom: 110%;
-  color: #000;
+  color: var(--link-secondary-color);
 }
