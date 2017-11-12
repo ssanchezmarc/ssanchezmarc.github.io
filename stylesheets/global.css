@@ -44,10 +44,10 @@
   overflow: hidden;
 }
 
-.splitter:hover .splitter__first-split, .splitter:focus .splitter__first-split {
+.splitter:hover .splitter__first-split {
   transform: translate3d(0, -110%, 0);
 }
-.splitter:hover .splitter__second-split, .splitter:focus .splitter__second-split {
+.splitter:hover .splitter__second-split {
   transform: translate3d(0, 110%, 0);
 }
 
