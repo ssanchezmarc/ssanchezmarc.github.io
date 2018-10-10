@@ -16,7 +16,7 @@
   text-decoration: none;
 }
 
-@supports not (display: grid) {
+/* @supports not (display: grid) {
   .gridcontainer,
   [class^="item"] {
     display: none;
@@ -31,7 +31,7 @@
     margin-top: 5%;
     box-shadow: 10px 10px 70px -20px rgba(0, 0, 0, 0.8);
   }
-}
+} */
 
 @supports (display: grid) {
   .nogrid {
