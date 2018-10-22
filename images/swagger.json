@@ -310,7 +310,7 @@
     },
     "ScheduleBodyParam": {
       "type": "object",
-      "required": ["name", "active", "cutoffTimes"],
+      "required": ["name", "active", "cutoffTime"],
       "properties": {
         "name": { "type": "string" },
         "active": { "type": "boolean" },
