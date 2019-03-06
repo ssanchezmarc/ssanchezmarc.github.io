@@ -37,6 +37,7 @@
   .nogrid {
     display: none;
   }
+  
 
   .gridcontainer {
     display: grid;
