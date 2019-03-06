@@ -51,9 +51,11 @@
   .me {
     grid-row: 5 / span 2;
     grid-column: 5 / span 2;
+  }
 
-    background-image: url(../images/me.jpg);
-    background-size: 100%;
+  .me__image {
+    max-width: 100%;
+    max-height: 100%;
   }
 
   .position {
